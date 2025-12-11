@@ -14,6 +14,8 @@
 		}
  	} else header("Location: login.php");
 	
+	include("./settings/session.php");
+	
 ?>
 <!DOCTYPE HTML>
 <html>

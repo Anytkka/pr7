@@ -1,6 +1,7 @@
 <?php
 	session_start();
 	include("./settings/connect_datebase.php");
+	include("./settings/session.php");
 ?>
 <!DOCTYPE HTML>
 <html>
