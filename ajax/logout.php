@@ -24,7 +24,8 @@
     $Sql = "INSERT INTO `logs`(`Ip`, `IdUser`, `Date`, `TimeOnline`, `Event`) VALUES ('{$Ip}','{$IdUser}','{$Date}','{$TimeDelta}','Пользователь {$Login} покинул сайт')";
     $mysqli->query(query: $Sql);
     
-   
+    // Запись в файл log.txt
+    writeToLog(message: "[LOGOUT] Пользователь '{$Login}' (ID: {$IdUser}) вышел из системы. Время в сети: {$TimeDelta}");
 
     session_destroy();
 ?>

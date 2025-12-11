@@ -42,10 +42,11 @@
             # 2. Записываем событие регистрации
             $Sql = "INSERT INTO `logs`(`Ip`, `IdUser`, `Date`, `TimeOnline`, `Event`) VALUES ('{$Ip}','{$id}','{$DateStart}','00:00:00','Пользователь ($login) зарегистрировался и авторизовался.')";
             $mysqli->query(query: $Sql);
-            
+			
+        # 3. Записать в файл log.txt
+            writeToLog("[REGISTRATION_SUCCESS] Пользователь '$login' (ID: $id) успешно зарегистрировался");
         } else {
             writeToLog("[REGISTRATION_ERROR] Ошибка при регистрации пользователя '$login'");
         }
         echo $id;
-    }
 ?>
