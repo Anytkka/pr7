@@ -45,6 +45,21 @@
 			
 				Административная панель служит для создания, редактирования и удаления записей на сайте.
 			
+				<?
+					$Sql = "SELECT * FROM `session` WHERE `IdUser` = {$_SESSION["user"]} ORDER BY `DateStart` DESC";
+					$Query = $mysqli->query(query: $Sql);
+					if ($Query->num_rows > 1) {
+						$Read = $Query->fetch_assoc();
+						$Read = $Query->fetch_assoc();
+
+						$TimeEnd = strtotime(datetime: $Read["DateNow"]);
+						$TimeNow = time();
+
+						$TimeDelta = round(num: ($TimeNow - $TimeEnd)/60);
+						echo "<br>Последняя активная сессия была: {$TimeDelta} минут назад";
+					}
+				?>
+
 				<div class="footer">
 					© КГАПОУ "Авиатехникум", 2020
 					<a href=#>Конфиденциальность</a>
