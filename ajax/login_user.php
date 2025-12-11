@@ -34,5 +34,10 @@
         $Sql = "INSERT INTO `logs`(`Ip`, `IdUser`, `Date`, `TimeOnline`, `Event`) VALUES ('{$Ip}','{$id}','{$DateStart}','00:00:00','Пользователь ($login) авторизовался.')";
         $mysqli->query(query: $Sql);
         
-       
+        
+    } else {
+        writeToLog("[LOGIN_FAILED] Неудачная попытка авторизации с логином '$login'");
+    }
+    
+    echo md5(string: md5(string: $id));
 ?>
