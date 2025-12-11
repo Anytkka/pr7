@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+  <url>
+    <loc>10.0.10.81\index.php</loc>
+    <lastmod>2020-09-10</lastmod>
+  </url>
+   <url>
+    <loc>10.0.10.81\login.php</loc>
+    <lastmod>2020-09-10</lastmod>
+  </url>
+   <url>
+    <loc>10.0.10.81\admin.php</loc>
+    <lastmod>2020-09-10</lastmod>
+  </url>
+   <url>
+    <loc>10.0.10.81\ajax\login_user.php</loc>
+    <lastmod>2020-09-10</lastmod>
+  </url>
+  <url>
+    <loc>10.0.10.81\ajax\logout.php</loc>
+    <lastmod>2020-09-10</lastmod>
+  </url>
+  <url>
+    <loc>10.0.10.81\ajax\phpinfo.php</loc>
+    <lastmod>2020-09-10</lastmod>
+  </url>
+</urlset>

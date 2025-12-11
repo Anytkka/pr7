@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /ajax
+Disallow: /js
+Disallow: /lib
+Disallow: /settings
+Disallow: /404.php
+Disallow: /user.php
+
+Sitemap: https://security.permaviat.ru/sitemap.xml

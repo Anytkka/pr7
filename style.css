@@ -1,0 +1,346 @@
+@font-face {
+    font-family: pat_fonts;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+html, body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #F8F9FA;
+	font-family: pat_fonts;
+}
+.main {
+	width: 100%;
+}
+.space {
+	height: 125px;
+	width: 100%;
+}
+.top-menu {
+	width: 100%;
+	height: 100px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #DADCE0;
+	position: fixed;
+}
+.top-menu img {
+	width: 50px;
+	height: 50px;
+	margin-left: 100px;
+	margin-top: 25px;
+	float: left;
+	margin-right: 25px;
+}
+.top-menu .singin{
+	margin-right: 35px;
+	margin-top: 25px;
+	float: right;
+	display: none;
+}
+
+.top-menu .singin img {
+	width: 50px;
+	height: 50px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	border-radius: 25px;
+}
+
+.top-menu .name {
+	padding-top: 20px;
+}
+.top-menu .name a {
+	font-size: 15.5px;
+	color: #5F6368;
+	text-decoration: none;
+}
+.top-menu .name a .subname {
+	font-size: 23px;
+	color: #5F6368;
+	text-decoration: none;
+}
+/*--------------------- CONTENT -------------------------*/
+
+.main .content {
+	margin-left: 50px;
+	margin-right: 50px;
+	width: auto;
+}
+
+.main .content .name {
+	font-size: 24px;
+	font-weight:bold;
+	padding-bottom: 40px;
+}
+.main .content .specialty {
+	min-height: 150px;
+	margin-bottom: 20px;
+	width: inherit;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	background-position: 0px 50%;
+}
+.main .content .specialty .slider {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0px 50%;
+	min-height: 150px;
+}
+.main .content .specialty:first-child {
+	//background-image: URL("img/specialty_1(1).png");
+	background-color: #fff;
+}
+
+.main .content .specialty:first-child .slider {
+	//background-image: URL("img/specialty_1(2).png");
+	background-color: #fff;
+}
+
+
+
+.main .content .footer {
+	padding-top: 50px;
+	height: 50px;
+	font-size: 14px;
+	text-align: center;
+}
+.main .content .footer a {
+	text-decoration: none;
+    color: #1A73E8;
+}
+.main .content .footer a:nth-child(1) {
+	margin: 0px 20px;
+}
+
+.main .content .specialty:hover .inner {
+	min-height:150px;
+	background: rgb(0,0,0, .1);
+	transition: 1s;
+}
+
+.main .content .specialty .inner {
+	min-height:150px;
+	background: rgb(0,0,0, .3);
+	transition: 1s;
+}
+.main .content .specialty .name {
+	padding-left: 40px;
+    padding-top: 40px;
+    font-weight: 0;
+    font-size: 20px;
+	padding-bottom: 0px;
+	text-shadow: 1px 1px 2px black;
+}
+.main .content .specialty .subname {
+	padding-left: 40px;
+    padding-top: 20px;
+    font-weight: 0;
+    font-size: 14px;
+	text-shadow: 1px 1px 2px black;
+}
+.main .content .specialty .description {
+	padding-left: 40px;
+    padding-top: 10px;
+    font-weight: 0;
+    font-size: 14px;
+	margin-right: 40px;
+	text-align: justify;
+	padding-bottom: 20px;
+	text-shadow: 1px 1px 2px black;
+}
+.main .content .specialty .description ul {
+	margin: 0px;
+	text-shadow: 1px 1px 2px black;
+}
+
+.main .content .specialty .description a {
+	margin-top: 10px;
+	color: #FFFFFF;
+    display: block;
+    text-decoration: none;
+    padding-top: 10px;
+    //float: right;
+	text-shadow: 1px 1px 2px black;
+}
+.main .content .specialty .description a:hover {
+    text-decoration: underline;
+}
+
+.main .content .specialty .button {
+    background-color: #1A73E8;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    float: right;
+    margin-right: 40px;
+    margin-top: -70px;
+	transition: 1s;
+	cursor: pointer;
+}
+.main .content .specialty .button:hover {
+    background-color: #1A60E8;
+	transition: 1s;
+}
+.button {
+	background-color: #1A73E8;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    float: right;
+    margin-right: 40px;
+	margin-top: 20px;
+	transition: 1s;
+	cursor: pointer;
+}
+
+/* АВТОРИЗАЦИЯ ПОЛЬЗОВАТЕЛЯ */
+.login {
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+	margin-bottom: 20px;
+	padding: 40px;
+	overflow: hidden;
+	font-size: 14px;
+	text-align: justify;
+	width: 40%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.login a {
+	color: red;
+}
+.main .content .login .loading {
+	width: 46px;
+	height: 46px;
+	float: right;
+	margin-right: 20px;
+	display: none;
+	margin-top: -25px;
+}
+.main .content .login .sub-name {
+	font-size: 16px;
+	font-weight: 100;
+	padding-bottom: 10px;
+}
+.main .content .login  input {
+    background: none;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #999999;
+	margin-bottom: 20px;
+}
+.main .content .login  img {
+    width: 20px;
+	
+}
+.main .content #password {
+    background: none;
+    width: calc(100% - 120px);
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #999999;
+	margin-bottom: 20px;
+}
+.main .content .login .button {
+    border: none;
+    width: 100px;
+    background-color: #1A73E8;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    float: right;
+    cursor: pointer;
+    transition: 1s;
+	margin-top: -25px;
+    margin-right: 0px;
+	margin-bottom: 0px;
+}
+.main .content .login .button_diactive {
+    border: none;
+    width: 100px;
+    background-color: #fd0000;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0,.2);
+    float: right;
+    cursor: pointer;
+	margin-top: -25px;
+    margin-right: 0px;
+	margin-bottom: 0px;
+}
+.main .content .login .button:hover {
+    background-color: #1A60E8;
+    transition: 1s;
+}
+
+/* УСПЕШНАЯ ЗАГРУЗКА ДАННЫХ */
+.content .success {
+	width: 100%;
+	text-align: center;
+}
+.content .success img {
+	width: 256px;
+	border-radius: 50%;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0, .2); 
+}
+.content .success .name {
+	margin-top: 50px;
+	
+}
+.content .success a {
+	color: red;
+}
+/* ОШИБКА */
+.input-error { 
+	background-color: #ff9797; 
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.12), 0 1px 5px 0 rgba(0,0,0, .2); 
+	font-size: 14px; 
+	margin-bottom: 20px; 
+	padding: 20px; 
+	overflow: hidden; 
+	font-size: 14px; 
+	text-align: justify;
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+	display: none;
+} 
+
+.input-error .close {
+	width: 15px;
+	height: 15px;
+	float: right;
+	margin-right: -10px;
+	margin-top: -10px;
+	cursor: pointer;
+}
+.input-error img { 
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	float: left;
+}
+.input-error .message {
+	font-size: 12px;
+}
+.messages {
+	padding: 10px;
+}
+.messages input {
+	width: calc(100% - 135px);
+	height: 50px;
+}
